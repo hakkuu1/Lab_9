@@ -1,22 +1,22 @@
 package Variant_7;
 import java.util.ArrayList;
 public class Aircompany {
-    private ArrayList<Aircraft> masPub = new ArrayList<Aircraft>();
+    private ArrayList<Aircraft> masAir = new ArrayList<Aircraft>();
     public void addAir(Aircraft m){
-        masPub.add(m);
+        masAir.add(m);
     }
     public Boolean findAir(Aircraft m){
-        return masPub.contains(m);
+        return masAir.contains(m);
     }
     public Aircompany(){
     }
     public Aircompany(ArrayList<Aircraft> n){
-        masPub=n;
+        masAir=n;
     }
     public void printCount(){
         int b = 0;
         int m = 0;
-        for(Aircraft p:masPub){
+        for(Aircraft p:masAir){
             if(p instanceof Airplane){
                 b+=1;
             } else if (p instanceof Helicopter) {
